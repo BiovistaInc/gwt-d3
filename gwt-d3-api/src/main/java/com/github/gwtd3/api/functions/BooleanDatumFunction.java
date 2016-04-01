@@ -26,55 +26,36 @@
  * NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE,
  * EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
-package com.github.gwtd3.api.xhr;
+package com.github.gwtd3.api.functions;
 
-import com.google.gwt.core.client.JavaScriptObject;
+import com.github.gwtd3.api.core.Selection;
+import com.github.gwtd3.api.core.Value;
+import com.google.gwt.dom.client.Element;
 
 /**
- * Overlay type for an XmlHttpRequest error.
+ * A function taking an element and the index of the element in the selection,
+ * returning a boolean primitive value.
+ * <p>
+ * Instances of this function are mainly used with mutator functions of {@link Selection}.
  *
- * @author <a href="mailto:eric.citaire@gmail.com">Eric Citaire</a>
+ * @author <a href="mailto:schiochetanthoni@gmail.com">Anthony Schiochet</a>
  *
  */
-public class XmlHttpRequest extends JavaScriptObject {
-    protected XmlHttpRequest() {
-        super();
-    }
+public interface BooleanDatumFunction {
 
-    public static enum ResponseType {
-        ARRAYBUFFER, BLOB, JSON, TEXT, DOCUMENT;
-
-        public static ResponseType fromString(final String s) {
-            if (s == null || s.trim().isEmpty()) {
-                return null;
-            }
-            return valueOf(s.toUpperCase());
-        }
-    }
-
-    public final native String statusText() /*-{
-		return this.statusText;
-    }-*/;
-
-    public final native int status() /*-{
-		return this.status;
-    }-*/;
-
-    public final native String response() /*-{
-		return this.response;
-    }-*/;
-
-    public final native ResponseType responseType() /*-{
-		return @com.github.gwtd3.api.xhr.XmlHttpRequest.ResponseType::fromString(Ljava/lang/String;)(this.responseType());
-	}-*/;
-
-    public final native XmlHttpRequest responseType(ResponseType type)/*-{
-		if (type == null) {
-			return this.responseType("");
-		} else {
-			var stype = type.@com.github.gwtd3.api.xhr.XmlHttpRequest.ResponseType::name()();
-			stype = stype.toLowerCase();
-			return this.responseType(stype);
-		}
-    }-*/;
+    /**
+     * Apply the function for the given {@link Element} at the specified index
+     * of the {@link Selection} mapped to the given {@link Datum}.
+     * <p>
+     * Note that if no datum is mapped to the element, {@link Datum#isUndefined()} will return true.
+     *
+     * @param context
+     *            the current element, may be irrelevant or null in some context.
+     * @param d
+     *            the datum
+     * @param index
+     *            the index of the element in the selection
+     * @return a boolean value
+     */
+    boolean apply(Element context, Value d, int index);
 }
