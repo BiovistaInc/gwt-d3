@@ -1,4 +1,3 @@
-#!/bin/bash
 #
 # Copyright (c) 2013, Anthony Schiochet and Eric Citaire
 # All rights reserved.
@@ -28,63 +27,12 @@
 # EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #
 
-
-set -e
-
-organization="gwtd3"
-project_repo="gwt-d3"
-site_repo="gwtd3.github.io"
-
-if [ "${TRAVIS_PULL_REQUEST}" != "false" ] ; then
-  echo "Building pull request #${TRAVIS_PULL_REQUEST}, skipping the deployment."
-  exit 0
+if [ ! -z "$TRAVIS_TAG" ]
+then
+    echo "on a tag -> set pom.xml <version> to $TRAVIS_TAG"
+    mvn --settings .travis/settings.xml org.codehaus.mojo:versions-maven-plugin:2.1:set -DnewVersion=$TRAVIS_TAG 1>/dev/null 2>/dev/null
+else
+    echo "not on a tag -> keep snapshot version in pom.xml"
 fi
 
-if [ "${TRAVIS_REPO_SLUG}" != "${organization}/${project_repo}" ] ; then
-  echo "Building fork '${TRAVIS_REPO_SLUG}', skipping the deployment."
-  exit 0
-fi
-
-if [ "${TRAVIS_BRANCH}" != "master" ] ; then
-  echo "Building branch '${TRAVIS_BRANCH}', skipping the deployment."
-  exit 0
-fi
-
-demo_artifact="${PWD}/gwt-d3-demo/target/gwt-d3-demo.war"
-private_key="${PWD}/id_rsa"
-
-encrypted_key="${encrypted_25c5d1a53c1c_key}"
-encrypted_iv="${encrypted_25c5d1a53c1c_iv}"
-
-git config --global user.email "build@travis-ci.org"
-git config --global user.name "Travis-CI"
-git config --global push.default simple
-
-openssl aes-256-cbc -K "${encrypted_key}" -iv "${encrypted_iv}" -in "${private_key}.enc" -out "${private_key}" -d
-chmod 400 id_rsa
-
-cat <<EOT > ~/.ssh/config
-host github.com
- HostName github.com
- IdentityFile ${private_key}
- User git
-EOT
-
-git clone "git@github.com:${organization}/${site_repo}.git"
-
-cd "${site_repo}"
-
-if [ -d demo ] ; then
-  git rm -r demo
-fi
-mkdir demo
-cd demo
-
-unzip "${demo_artifact}" -x "META-INF/*" "WEB-INF/*"
-
-git add .
-if git commit -m "Update demo" ; then
-  git push
-fi
-
-rm -f "${private_key}"
+mvn --settings .travis/settings.xml clean deploy -Dmaven.javadoc.failOnError=false -B -U -V -P selenium
