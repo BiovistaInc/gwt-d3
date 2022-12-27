@@ -36,7 +36,7 @@ import com.google.gwt.dom.client.Element;
  * A {@link DatumFunction} that counts something, mainly used as a debugging purpose
  * in {@link Selection#each(DatumFunction)} method.
  * <p>
- * You may override the {@link #takeIntoAccount(Element, Datum, int)} to change when the count is incremented.
+ * You may override the {@link #takeIntoAccount(Element, Value, int)} to change when the count is incremented.
  * 
  * @author <a href="mailto:schiochetanthoni@gmail.com">Anthony Schiochet</a>
  * 

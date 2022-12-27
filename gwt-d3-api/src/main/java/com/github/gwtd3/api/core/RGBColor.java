@@ -69,7 +69,7 @@ public class RGBColor extends Color {
      * Returns the equivalent color in HSL space; see d3.hsl for details on the returned object. The conversion from HSL to RGB is described in CSS3 Color Module Level 3; this is
      * the equivalent reverse operation.
      * 
-     * @return
+     *
      */
     public native final HSLColor hsl()/*-{
 		return this.hsl();

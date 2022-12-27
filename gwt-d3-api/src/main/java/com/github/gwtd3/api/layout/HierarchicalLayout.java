@@ -31,7 +31,6 @@ package com.github.gwtd3.api.layout;
 import java.util.Comparator;
 import java.util.List;
 
-import com.github.gwtd3.api.D3;
 import com.github.gwtd3.api.arrays.Array;
 import com.github.gwtd3.api.core.Value;
 import com.github.gwtd3.api.functions.DatumFunction;
@@ -119,8 +118,8 @@ public abstract class HierarchicalLayout<L, T, N extends HierarchicalLayout.Node
          * Create a basic link object starting at one coordinate and ending at
          * another
          *
-         * @param the starting coordinates
-         * @param the ending coordinates
+         * @param source the starting coordinates
+         * @param target the ending coordinates
          * @return the link object
          */
         public static final native <T> Link<T> create(T source, T target) /*-{
@@ -190,7 +189,7 @@ public abstract class HierarchicalLayout<L, T, N extends HierarchicalLayout.Node
      * for display, often in conjunction with the {@link Diagonal} shape
      * generator.
      *
-     * @param the array of nodes, as returned by {@link #nodes(Object)}
+     * @param n the array of nodes, as returned by {@link #nodes(Object)}
      * @return array of {@link Link} connecting nodes
      */
     public final native Array<Link<T>> links(Array<N> n) /*-{
@@ -266,8 +265,8 @@ public abstract class HierarchicalLayout<L, T, N extends HierarchicalLayout.Node
      * <p>
      * The comparator function is invoked for pairs of nodes, being passed the input data for each node. The default
      * comparator is null, which disables sorting and uses tree traversal order. Sorting by the node's name or key is
-     * common and can be done easily via {@link #sort(JavaScriptObject)} using {@link D3#ascending()} or
-     * {@link D3#descending()}.
+     * common and can be done easily via {@link #sort(JavaScriptObject)} using D3.ascending() or
+     * D3.descending().
      * <p>
      *
      * @param comparator the comparator to use or null to remove the sort
@@ -283,7 +282,7 @@ public abstract class HierarchicalLayout<L, T, N extends HierarchicalLayout.Node
      * <p>
      * The comparator function is invoked for pairs of nodes, being passed the input data for each node. The default
      * comparator is null, which disables sorting and uses tree traversal order. Sorting by the node's name or key is
-     * common and can be done easily using {@link D3#ascending()} or {@link D3#descending()}.
+     * common and can be done easily using D3.ascending() or D3.descending().
      * <p>
      * From Java, you may prefer use {@link #sort(Comparator)}.
      *

@@ -44,7 +44,7 @@ import com.google.gwt.core.client.JavaScriptObject;
  * leaf node using a summary function.
  * <p>
  * The nest operator (the object returned by
- * {@link D3#nest(}) is reusable, and does not retain any references to the data that is
+ * D3.nest(} is reusable, and does not retain any references to the data that is
  * nested.
  * <p>
  * For example, consider the following tabular data structure of Barley yields,

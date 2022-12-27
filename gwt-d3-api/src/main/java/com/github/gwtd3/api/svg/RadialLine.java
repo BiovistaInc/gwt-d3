@@ -62,7 +62,7 @@ public class RadialLine extends Line {
 	 * The default accessor assumes that each input element is a two-element
 	 * array of numbers.
 	 * 
-	 * @param datumFunction
+	 * @param callback
 	 * @return the current line
 	 */
 	public final native RadialLine radius(final DatumFunction<Double> callback)/*-{
@@ -91,7 +91,7 @@ public class RadialLine extends Line {
 	 * The default accessor assumes that each input element is a two-element
 	 * array of numbers.
 	 * 
-	 * @param datumFunction
+	 * @param callback
 	 * @return the current line
 	 */
 	public final native RadialLine angle(final DatumFunction<Double> callback)/*-{

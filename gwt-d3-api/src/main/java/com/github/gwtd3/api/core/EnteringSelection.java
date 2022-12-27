@@ -115,7 +115,7 @@ public class EnteringSelection extends JavaScriptObject {
      * <p>
      * The method returns a new Selection containing the inserted element.
      *
-     * @param string
+     * @param name
      * @return a new selection containing the inserted element
      */
     public final Selection prepend(final String name) {
@@ -153,7 +153,7 @@ public class EnteringSelection extends JavaScriptObject {
      * <p>
      *
      * @param func
-     * @return
+     *
      */
     public final native Selection select(DatumFunction<Element> func)/*-{
 		return this

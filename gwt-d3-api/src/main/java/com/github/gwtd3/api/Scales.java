@@ -284,7 +284,7 @@ public class Scales extends JavaScriptObject {
 	}-*/;
 
 	/**
-	 * @return
+	 *
 	 */
 	public static final native Scales get()/*-{
 		return $wnd.d3.scale;

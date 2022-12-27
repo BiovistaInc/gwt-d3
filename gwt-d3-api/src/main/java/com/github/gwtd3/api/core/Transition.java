@@ -31,7 +31,6 @@
  */
 package com.github.gwtd3.api.core;
 
-import com.github.gwtd3.api.D3;
 import com.github.gwtd3.api.IsFunction;
 import com.github.gwtd3.api.ease.Easing;
 import com.github.gwtd3.api.ease.EasingFunction;
@@ -48,8 +47,8 @@ import com.google.gwt.dom.client.Element;
  * smoothly over time rather than instantaneously. You derive a transition from
  * a selection using the {@link Selection#transition()} operator. While
  * transitions generally support the same operators as selections (such as
- * {@link #attr(String)} and {@link #style(String)}), not all operators are
- * supported; for example, you must {@link #append(String)} elements before a
+ * {@link #attr(String, String)} and {@link #style(String, String)}), not all operators are
+ * supported; for example, you must #append(String) elements before a
  * transition starts. A {@link #remove()} operator is provided for convenient
  * removal of elements when the transition ends.
  * <p>
@@ -136,7 +135,7 @@ public class Transition extends JavaScriptObject {
 	 * You may also compute the delay as a function of the data, thereby
 	 * creating a data-driven animation.
 	 * 
-	 * @param milliseconds
+	 * @param func
 	 *            the transition duration in milliseconds
 	 * @return the current transition
 	 */
@@ -183,7 +182,7 @@ public class Transition extends JavaScriptObject {
 	 * Note that it is not possible to customize the easing function per-element
 	 * or per-attribute; however, if you use the "linear" easing function, you
 	 * can apply custom easing inside your interpolator using
-	 * {@link #attrTween(String, TweenFunction)} or {@link #styleTween()}
+	 * {@link #attrTween(String, TweenFunction)} or {@link #styleTween(String, TweenFunction, boolean)}
 	 * <p>
 	 * 
 	 * @param callback
@@ -204,7 +203,7 @@ public class Transition extends JavaScriptObject {
 	 * 
 	 * @param function
 	 * @param t
-	 * @return
+	 *
 	 */
 	private static final double trampolineCallEase(
 			final EasingFunction function, final double t) {
@@ -223,7 +222,7 @@ public class Transition extends JavaScriptObject {
 	 * A check is performed to see if the ending value represents a color of the
 	 * form /^(#|rgb\(|hsl\()/, or one of the CSS named colors; if so, the
 	 * starting value is coerced to an RGB color and
-	 * {@link D3#interpolateRgb(Color, Color)} is used. Otherwise,
+	 * D3.interpolateRgb(Color, Color) is used. Otherwise,
 	 * interpolateString is used, which interpolates numbers embedded within
 	 * strings.
 	 * <p>
@@ -398,7 +397,6 @@ public class Transition extends JavaScriptObject {
 	}-*/;
 
 	/**
-	 * See {@link Transition#style(String, T, boolean)}.
 	 * 
 	 * @param name
 	 *            the name of the style, such as font-size
@@ -411,7 +409,6 @@ public class Transition extends JavaScriptObject {
 	}-*/;
 
 	/**
-	 * See {@link Transition#style(String, T, boolean)}.
 	 * 
 	 * @param name
 	 *            the name of the style, such as font-size
@@ -840,7 +837,7 @@ public class Transition extends JavaScriptObject {
 	 * shared timing across a set of transitions.
 	 * 
 	 * @param listener
-	 * @return
+	 *
 	 */
 	public final native Transition each(DatumFunction<Void> listener)/*-{
 		return this

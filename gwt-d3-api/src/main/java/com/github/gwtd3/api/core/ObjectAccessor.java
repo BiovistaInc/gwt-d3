@@ -39,7 +39,7 @@ public interface ObjectAccessor<D, T> {
      *            the current DSV row
      * @param index
      *            index of the current DSV row
-     * @return
+     *
      */
     T apply(D data, int index);
 }

@@ -93,7 +93,7 @@ public class Interpolators {
 	 * Returns an RGB color space interpolator between the two colors a and b.
 	 * <p>
 	 * The colors a and b need not be in RGB, but they will be converted to RGB
-	 * using {@link D3#rgb(String)}.
+	 * using D3.rgb(String).
 	 * <p>
 	 * The red, green and blue channels are interpolated linearly in a manner
 	 * equivalent to interpolateRound, as fractional channel values are not
@@ -123,7 +123,7 @@ public class Interpolators {
 	 * Returns an RGB color space interpolator between the two colors a and b.
 	 * <p>
 	 * The colors a and b need not be in RGB, but they will be converted to RGB
-	 * using {@link D3#rgb(String)}.
+	 * using D3.rgb(String).
 	 * <p>
 	 * The red, green and blue channels are interpolated linearly in a manner
 	 * equivalent to interpolateRound, as fractional channel values are not
@@ -153,7 +153,7 @@ public class Interpolators {
 	 * Returns an HSL color space interpolator between the two colors a and b.
 	 * <p>
 	 * The colors a and b need not be in HSL, but they will be converted to HSL
-	 * using {@link D3#hsl(String)}.
+	 * using D3.hsl(String).
 	 * <p>
 	 * The hue, saturation and lightness are interpolated linearly in a manner
 	 * equivalent to interpolateNumber. (The shortest path between the start and
@@ -183,7 +183,7 @@ public class Interpolators {
 	 * Returns an RGB color space interpolator between the two colors a and b.
 	 * <p>
 	 * The colors a and b need not be in RGB, but they will be converted to RGB
-	 * using {@link D3#rgb(String)}.
+	 * using D3.rgb(String).
 	 * <p>
 	 * The red, green and blue channels are interpolated linearly in a manner
 	 * equivalent to interpolateRound, as fractional channel values are not
@@ -374,7 +374,7 @@ public class Interpolators {
 	}
 
 	/**
-	 * See {@link #interpolate(double, double)}.
+	 * See {@link #interpolateNumber(double, double)}.
 	 * 
 	 * @param a
 	 *            the start
@@ -388,7 +388,7 @@ public class Interpolators {
 	}
 
 	/**
-	 * See {@link #interpolate(double, double)}.
+	 * See {@link #interpolateNumber(double, double)}.
 	 * 
 	 * @param a
 	 *            the start
@@ -402,7 +402,7 @@ public class Interpolators {
 	}
 
 	/**
-	 * See {@link #interpolate(double, double)}.
+	 * See {@link #interpolateNumber(double, double)}.
 	 * 
 	 * @param a
 	 *            the start
@@ -416,7 +416,7 @@ public class Interpolators {
 	}
 
 	/**
-	 * See {@link #interpolate(double, double)}.
+	 * See {@link #interpolateNumber(double, double)}.
 	 * 
 	 * @param a
 	 *            the start
@@ -431,7 +431,7 @@ public class Interpolators {
 
 	/**
 	 * Returns a numeric interpolator between the two numbers a and b; the
-	 * interpolator is similar to {@link #interpolate(double, double)}, except
+	 * interpolator is similar to {@link #interpolateNumber(double, double)}, except
 	 * it will round the resulting value to the nearest integer.
 	 * <p>
 	 * 

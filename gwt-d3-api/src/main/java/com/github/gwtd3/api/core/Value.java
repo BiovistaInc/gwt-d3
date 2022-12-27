@@ -68,7 +68,7 @@ public class Value extends JavaScriptObject {
      *
      * @param object
      * @param propertyName
-     * @return
+     *
      */
     public static final native Value create(JavaScriptObject object,
             String propertyName)/*-{

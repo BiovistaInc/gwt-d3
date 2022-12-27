@@ -28,7 +28,6 @@
  */
 package com.github.gwtd3.api.scales;
 
-import com.github.gwtd3.api.D3;
 import com.github.gwtd3.api.arrays.Array;
 
 /**
@@ -85,7 +84,7 @@ public class QuantileScale extends DiscreteQuantitativeScale<QuantileScale> {
 	 * quantile; greater values less than the second threshold are in the second
 	 * quantile, and so on.
 	 * <p>
-	 * Internally, the thresholds array is used with {@link D3#bisect} to find
+	 * Internally, the thresholds array is used with D3.bisect() to find
 	 * the output quantile associated with the given input value.
 	 * 
 	 * @return the array of threshold values

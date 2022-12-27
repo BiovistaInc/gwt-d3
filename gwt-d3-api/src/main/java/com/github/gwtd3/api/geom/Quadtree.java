@@ -46,8 +46,11 @@ import com.google.gwt.core.client.JavaScriptObject;
  * Barnes-Hut approximation for computing n-body forces, or collision detection.
  * <p>
  * 
- * @see http://bl.ocks.org/mbostock/4343214#index.html
- * @see http://bl.ocks.org/mbostock/1804919
+ * See:
+ * <ul>
+ * <li>http://bl.ocks.org/mbostock/4343214#index.html</li>
+ * <li>http://bl.ocks.org/mbostock/1804919</li>
+ * </ul>
  * 
  * @author <a href="mailto:schiochetanthoni@gmail.com">Anthony Schiochet</a>
  * 

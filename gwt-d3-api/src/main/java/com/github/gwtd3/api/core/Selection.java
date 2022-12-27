@@ -51,7 +51,7 @@ import com.google.gwt.dom.client.NodeList;
 
 /**
  * A selection is an array of elements pulled from the current document. D3 uses
- * CSS3 to select elements. See {@link D3#select(String)} and {@link D3#select(com.google.gwt.dom.client.Node)} methods
+ * CSS3 to select elements. See {@link D3#select(String)} and D3.select(com.google.gwt.dom.client.Node) methods
  * for creating {@link Selection}.
  * <p>
  * <i>If your browser doesn't support selectors natively, you can include Sizzle before D3 for backwards-compatibility.
@@ -157,7 +157,7 @@ public class Selection extends EnteringSelection {
      * TODO: check this method also work for EnteringSelections and pull it up in that case...
      *
      * @param selector
-     * @return
+     *
      */
     public final native Selection selectAll(String selector)/*-{
 		return this.selectAll(selector);
@@ -190,8 +190,8 @@ public class Selection extends EnteringSelection {
      * <p>
      * TODO: check this method also work for EnteringSelections and pull it up in that case...
      *
-     * @param selector
-     * @return
+     * @param func
+     *
      */
     public final native <T extends Node> Selection selectAll(DatumFunction<NodeList<T>> func)/*-{
 		return this
@@ -271,7 +271,7 @@ public class Selection extends EnteringSelection {
      *
      * @param name
      * @param value
-     * @return
+     *
      */
     public native final Selection attr(final String name, double value)
     /*-{
@@ -283,7 +283,7 @@ public class Selection extends EnteringSelection {
      *
      * @param name
      * @param value
-     * @return
+     *
      */
     public native final <T> Selection attr(final String name, boolean value)/*-{
 		return this.attr(name, value);
@@ -339,33 +339,30 @@ public class Selection extends EnteringSelection {
     }-*/;
 
     /**
-     * See {@link Selection#style(String, T, boolean)}.
      *
      * @param name
      * @param value
-     * @return
+     *
      */
     public native final Selection style(String name, String value) /*-{
 		return this.style(name, value);
     }-*/;
 
     /**
-     * See {@link Selection#style(String, T, boolean)}.
      *
      * @param name
      * @param value
-     * @return
+     *
      */
     public native final Selection style(String name, double value) /*-{
 		return this.style(name, value);
     }-*/;
 
     /**
-     * See {@link Selection#style(String, T, boolean)}.
      *
      * @param name
-     * @param value
-     * @return
+     * @param callback
+     *
      */
     public native final Selection style(String name, DatumFunction<?> callback) /*-{
 		try {
@@ -435,7 +432,7 @@ public class Selection extends EnteringSelection {
      * If add is true, then all elements are assigned the specified class(es), if not already assigned; if false, then
      * the class(es) is(are) removed from all selected elements, if assigned.
      *
-     * @param className
+     * @param classNames
      *            the className(s) to add or remove
      * @param add
      *            true to add false to remove the class(es) from all the
@@ -451,7 +448,7 @@ public class Selection extends EnteringSelection {
      * has the specified class. This is generally useful only if you know the
      * selection contains exactly one element.
      *
-     * @param className
+     * @param classNames
      *            the className to test the presence
      * @return true if the first element of the selection has the given
      *         classname in the class attribute
@@ -477,7 +474,7 @@ public class Selection extends EnteringSelection {
      * If the function returns true, then the element is assigned the specified class, if not already assigned; if it
      * returns false or null, then the class is removed from the element, if assigned.
      *
-     * @param className
+     * @param classNames
      *            the class to assign or not
      * @param addFunction
      *            the function evaluated for each element and returning a
@@ -514,7 +511,7 @@ public class Selection extends EnteringSelection {
      * If the function returns true, then the element is assigned the specified class, if not already assigned; if it
      * returns false or null, then the class is removed from the element, if assigned.
      *
-     * @param className
+     * @param classNames
      *            the class to assign or not
      * @param addFunction
      *            the function evaluated for each element and returning a
@@ -629,8 +626,8 @@ public class Selection extends EnteringSelection {
      * namespace. By default, D3 supports svg, xhtml, xlink, xml, and xmlns namespaces. Additional namespaces can be
      * registered by adding to d3.ns.prefix.
      * <p>
-     * Note: if you provide a {@link DatumFunction<T>} parameterized with a wrapper type, such as java.lang.Double or
-     * java.lang.Boolean, when getting the property value ( {@link #property(String)}), you should use
+     * Note: if you provide a DatumFunction<T>() parameterized with a wrapper type, such as java.lang.Double or
+     * java.lang.Boolean, when getting the property value ({@link #property(String)}), you should use
      * {@link Value#as(Class)} with the corresponding Class object, such as Value.as(Double) or Value.as(Boolean) to get
      * the property value.
      *
@@ -836,7 +833,7 @@ public class Selection extends EnteringSelection {
      * default by-index key mapping.
      * <p>
      * The specified values must be an array-like structure of data values, such as an array of numbers or objects. Use
-     * {@link JsArrayUtils} or {@link JsArrays} to turn your Java arrays into Javascript arrays (which has no overhead
+     * {@link JsArrayUtils} or JsArrays to turn your Java arrays into Javascript arrays (which has no overhead
      * in prod mode), or use the variant {@link #data} methods.
      * <p>
      * The by-index key mapping means that the first datum in the array is assigned to the first element in the current
@@ -1164,7 +1161,7 @@ public class Selection extends EnteringSelection {
      * <p>
      * See <a href="https://github.com/mbostock/d3/wiki/Selections#wiki-datum">datum </a>
      *
-     * @param the
+     * @param datumFunction
      *            function providing the datum
      * @return the current selection
      */
@@ -1256,7 +1253,7 @@ public class Selection extends EnteringSelection {
      * considered equal and the order is arbitrary.
      * <p>
      * Note that the sort is not guaranteed to be stable; however, it is guaranteed to have the same behavior as your
-     * browser's built-in {@link Array#sort} method on arrays.
+     * browser's built-in Array#sort() method on arrays.
      * <p>
      *
      * @param comparator
@@ -1317,7 +1314,7 @@ public class Selection extends EnteringSelection {
      *
      * @param eventType
      * @param listener
-     * @return
+     *
      */
     public native final Selection on(String eventType,
             DatumFunction<Void> listener) /*-{

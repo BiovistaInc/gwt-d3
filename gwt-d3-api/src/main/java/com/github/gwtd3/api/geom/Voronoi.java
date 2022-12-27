@@ -81,7 +81,7 @@ public class Voronoi extends JavaScriptObject {
      * Clear the extent clipping.
      * <p>
      *
-     * @return
+     *
      */
     public final native Voronoi clearClipExtent()/*-{
 		return this.clipExtent(null);
@@ -151,7 +151,7 @@ public class Voronoi extends JavaScriptObject {
      * TODO: make a demo from http://bl.ocks.org/mbostock/1073373 TODO:
      * documentation
      *
-     * @return
+     *
      * @experimental
      */
     public final native Array<Link> links(Array<?> nodes)/*-{
@@ -162,7 +162,7 @@ public class Voronoi extends JavaScriptObject {
      * TODO: make a demo from http://bl.ocks.org/mbostock/1073373 TODO:
      * documentation
      *
-     * @return
+     *
      * @experimental
      */
     public final native Array<Link> triangles(Array<?> nodes)/*-{

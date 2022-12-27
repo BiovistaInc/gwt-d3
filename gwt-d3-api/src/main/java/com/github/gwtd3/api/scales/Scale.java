@@ -28,7 +28,6 @@
  */
 package com.github.gwtd3.api.scales;
 
-import com.github.gwtd3.api.D3;
 import com.github.gwtd3.api.arrays.Array;
 import com.github.gwtd3.api.core.Value;
 import com.github.gwtd3.api.interpolators.Interpolator;
@@ -85,8 +84,7 @@ public abstract class Scale<S extends Scale<S>> extends JavaScriptObject {
      * Sets the scale's input domain to the specified array.
      * <p>
      *
-     * @param strings
-     *            the array
+     * @param array
      * @return the current scale
      */
     public final native S domain(JavaScriptObject array)/*-{
@@ -173,7 +171,7 @@ public abstract class Scale<S extends Scale<S>> extends JavaScriptObject {
      * the output range.
      * <p>
      * Note: some {@link Interpolator}s reuse return values. For example, if the domain values are arbitrary objects,
-     * then {@link D3#interpolateObject(JavaScriptObject, JavaScriptObject)} is automatically applied and the scale
+     * then D3.interpolateObject(JavaScriptObject, JavaScriptObject) is automatically applied and the scale
      * reuses the returned object.
      * <p>
      * Often, the return value of a scale is immediately used to set an attribute or style, and you don’t have to worry
@@ -196,7 +194,7 @@ public abstract class Scale<S extends Scale<S>> extends JavaScriptObject {
      * the output range.
      * <p>
      * Note: some {@link Interpolator}s reuse return values. For example, if the domain values are arbitrary objects,
-     * then {@link D3#interpolateObject(JavaScriptObject, JavaScriptObject)} is automatically applied and the scale
+     * then D3.interpolateObject(JavaScriptObject, JavaScriptObject) is automatically applied and the scale
      * reuses the returned object.
      * <p>
      * Often, the return value of a scale is immediately used to set an attribute or style, and you don’t have to worry
@@ -219,7 +217,7 @@ public abstract class Scale<S extends Scale<S>> extends JavaScriptObject {
      * the output range.
      * <p>
      * Note: some {@link Interpolator}s reuse return values. For example, if the domain values are arbitrary objects,
-     * then {@link D3#interpolateObject(JavaScriptObject, JavaScriptObject)} is automatically applied and the scale
+     * then D3.interpolateObject(JavaScriptObject, JavaScriptObject) is automatically applied and the scale
      * reuses the returned object.
      * <p>
      * Often, the return value of a scale is immediately used to set an attribute or style, and you don’t have to worry

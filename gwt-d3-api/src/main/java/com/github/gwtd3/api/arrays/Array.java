@@ -310,7 +310,7 @@ public class Array<T> extends JavaScriptObject {
     /**
      * Return the item at the index i.
      * 
-     * @param i
+     * @param index
      *            the index of the item
      * @return the item
      */
@@ -321,7 +321,7 @@ public class Array<T> extends JavaScriptObject {
     /**
      * Return the item at the index i.
      * 
-     * @param i
+     * @param index
      *            the index of the item
      * @return the item
      */
@@ -476,7 +476,7 @@ public class Array<T> extends JavaScriptObject {
      * 
      * @param array1
      * @param array2
-     * @return
+     *
      */
     public native final Array<?> concat(Array<?> array1, Array<?> array2)/*-{
 		return this.concat(array1, array2);
@@ -489,7 +489,7 @@ public class Array<T> extends JavaScriptObject {
      * @param array1
      * @param array2
      * @param array3
-     * @return
+     *
      */
     public native final Array<?> concat(Array<?> array1, Array<?> array2,
             Array<?> array3)/*-{
@@ -504,7 +504,7 @@ public class Array<T> extends JavaScriptObject {
      * @param array2
      * @param array3
      * @param array4
-     * @return
+     *
      */
     public native final Array<?> concat(Array<?> array1, Array<?> array2,
             Array<?> array3, Array<?> array4)/*-{
@@ -520,7 +520,7 @@ public class Array<T> extends JavaScriptObject {
      * @param array3
      * @param array4
      * @param array5
-     * @return
+     *
      */
     public native final Array<?> concat(Array<?> array1, Array<?> array2,
             Array<?> array3, Array<?> array4, Array<?> array5)/*-{
@@ -535,7 +535,6 @@ public class Array<T> extends JavaScriptObject {
      * which have been initialized to undefined.
      * 
      * @param callback
-     * @return this instance
      */
     public native final void forEach(ForEachCallback<Void> callback) /*-{
 		this
@@ -550,7 +549,6 @@ public class Array<T> extends JavaScriptObject {
      * which have been initialized to undefined.
      * 
      * @param callback
-     * @return this instance
      */
     public native final void forEach(ForEachCallback<Void> callback,
             Object thisArg) /*-{

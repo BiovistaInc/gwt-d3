@@ -234,8 +234,8 @@ public class TimeScale extends ContinuousQuantitativeScale<TimeScale> {
 	 * href="http://bl.ocks.org/4149176">multi-scale time format</a>.
 	 * 
 	 * 
-	 * @param the
-	 *            number of ticks to take into account to create the
+	 * @param count
+	 *            the number of ticks to take into account to create the
 	 *            {@link Formatter}.
 	 * @return a number format
 	 */

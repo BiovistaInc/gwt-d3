@@ -69,6 +69,7 @@ import com.google.gwt.json.client.JSONString;
  * 		},
  * 	end:"value"
  * 	}
+ * }
  * </pre>
  * 
  * TODO: Jsonarray
@@ -142,7 +143,7 @@ public class JSON {
 	 * JSON builder.
 	 * 
 	 * @param propName
-	 * @return
+	 *
 	 */
 	public JSON enter(final String propName) {
 		JSON child = new JSON(this);

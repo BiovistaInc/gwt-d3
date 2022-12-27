@@ -31,7 +31,6 @@ package com.github.gwtd3.api.scales;
 import com.github.gwtd3.api.Scales;
 import com.github.gwtd3.api.arrays.Array;
 import com.google.gwt.core.client.JavaScriptObject;
-import com.google.gwt.core.client.JsArrayInteger;
 
 /**
  * Ordinal {@link Scales} have a discrete domain, such as a set of names or
@@ -63,7 +62,7 @@ import com.google.gwt.core.client.JsArrayInteger;
  * as a set of categorical colors.
  * <p>
  * In other cases, such as determining the layout of an ordinal scatterplot or bar chart, you may find the
- * {@link #rangePoints(JsArrayInteger, double)} or {@link #rangeBands(JsArrayInteger, double)} operators more
+ * {@link #rangePoints(double, double)} or {@link #rangeBands(double, double)} operators more
  * convenient.
  * <p>
  *

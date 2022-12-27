@@ -95,7 +95,7 @@ public class Force<T> extends JavaScriptObject {
          * Create a new node containing the given user datum
          *
          * @param userDatum
-         * @return
+         *
          */
         static final native <T> Node<T> create(T userDatum)/*-{
 			return {
@@ -231,8 +231,8 @@ public class Force<T> extends JavaScriptObject {
          * Create a basic link object starting at one coordinate and ending at
          * another
          *
-         * @param the starting coordinates
-         * @param the ending coordinates
+         * @param source the starting coordinates
+         * @param target the ending coordinates
          * @return the link object
          */
         public static final native <T> Link<T> create(T source, T target) /*-{
@@ -774,7 +774,7 @@ public class Force<T> extends JavaScriptObject {
      *
      * @param type the type of event to listen to
      * @param callback
-     * @return
+     *
      */
     public native final Selection on(ForceEventType type, DatumFunction<?> callback) /*-{
 		try {
@@ -831,7 +831,7 @@ public class Force<T> extends JavaScriptObject {
      * <p>
      * See the collapsible force layout and divergent forces for examples.
      *
-     * @return
+     *
      */
     public final native Drag drag() /*-{
 		return this.drag();

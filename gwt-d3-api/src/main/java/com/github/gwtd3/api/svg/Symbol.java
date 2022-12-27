@@ -56,7 +56,7 @@ import com.github.gwtd3.api.functions.DatumFunction;
  * 		return "translate(" + x(d.x) + "," + y(d.y) + ")";
  * })
  * .attr("d", d3.svg.symbol());
- *
+ * }
  * </pre>
  *
  * In the future, we may add x- and y-accessors for parity with the line and area generators. The symbol will be
@@ -138,12 +138,12 @@ public class Symbol extends PathDataGenerator {
     /**
      * Set the type of the symbol using the specified {@link DragEventType} constant.
      * <p>
-     * The default type is {@link DragEventType#CIRCLE}.
+     * The default type is {@link DragEventType#DRAGSTART}.
      *
      *
      *
      * @param type
-     * @return
+     *
      */
     public native final Symbol type(Type type)/*-{
 		return this

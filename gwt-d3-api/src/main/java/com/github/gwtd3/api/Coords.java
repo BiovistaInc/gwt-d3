@@ -83,7 +83,7 @@ public class Coords extends JavaScriptObject {
 	 * set the y coords
 	 * 
 	 * @param y
-	 * @return
+	 *
 	 */
 	public final native Coords y(double y)/*-{
 		this.y = y;

@@ -67,7 +67,7 @@ public class HSLColor extends Color {
      * returned object. The conversion from HSL to RGB is described in CSS3
      * Color Module Level 3.
      * 
-     * @return
+     *
      */
     public native final RGBColor rgb()/*-{
 		return this.rgb();

@@ -31,7 +31,7 @@ package com.github.gwtd3.api.functions;
 import com.github.gwtd3.api.D3;
 
 /**
- * A function to be used with {@link D3#timer()}.
+ * A function to be used with {@link D3#timer(TimerFunction)}.
  * <p>
  * 
  * @author <a href="mailto:schiochetanthoni@gmail.com">Anthony Schiochet</a>

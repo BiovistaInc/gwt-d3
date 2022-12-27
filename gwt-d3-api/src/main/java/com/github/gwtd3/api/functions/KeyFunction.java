@@ -43,11 +43,11 @@ import com.google.gwt.dom.client.Element;
  * Single argument {@link Selection#data} methods use a default by-index behavior to map data with elements. This interface can be passed to
  * {@link Selection#data(com.google.gwt.core.client.JavaScriptObject, KeyFunction)} and variants to map data to elements using a different criteria.
  * <p>
- * The {@link #apply(Element, Datum, int)} method will be called once for each element in the new data array, and once again for each existing element in the selection. The result
+ * The apply(Element, Datum, int) method will be called once for each element in the new data array, and once again for each existing element in the selection. The result
  * will be used to map the passed data to the passed element.
  * <p>
  * 
- * @see #apply(Element, Datum, int)
+ * @see DatumFunction#apply(Element, Value, int)
  * 
  * @author <a href="mailto:schiochetanthoni@gmail.com">Anthony Schiochet</a>
  * 

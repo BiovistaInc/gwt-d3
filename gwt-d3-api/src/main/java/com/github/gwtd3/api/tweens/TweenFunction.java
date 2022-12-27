@@ -47,7 +47,7 @@ public interface TweenFunction<T> {
 	 * @param datum
 	 * @param index
 	 * @param attributeValue
-	 * @return
+	 *
 	 */
 	Interpolator<T> apply(Element context, Value datum, int index, Value value);
 }

@@ -82,7 +82,7 @@ public class Arc extends PathDataGenerator {
 	/**
 	 * Set the inner radius of the Arc.
 	 * 
-	 * @param radius
+	 * @param innerRadius
 	 * @return the current arc generator
 	 */
 	public final Arc innerRadius(final double innerRadius) {
@@ -99,7 +99,7 @@ public class Arc extends PathDataGenerator {
 	/**
 	 * Set the outerRadius of the Arc.
 	 * 
-	 * @param radius
+	 * @param outerRadius
 	 * @return the current arc generator
 	 */
 	public final Arc outerRadius(final double outerRadius) {
@@ -171,7 +171,7 @@ public class Arc extends PathDataGenerator {
 	 * 
 	 * @param datum
 	 * @param index
-	 * @return
+	 *
 	 */
 	public final native Array<Double> centroid(JavaScriptObject datum, int index)/*-{
 		return this.centroid(datum, index);
@@ -196,7 +196,7 @@ public class Arc extends PathDataGenerator {
 	/**
 	 * Create a new arc with properties initialized with the given arc
 	 * 
-	 * @param arc
+	 * @param oldArc
 	 *            the arc to copy
 	 * @return the new copy
 	 */

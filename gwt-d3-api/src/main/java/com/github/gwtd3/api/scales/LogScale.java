@@ -109,8 +109,8 @@ public class LogScale extends ContinuousQuantitativeScale<LogScale> {
 	 * <p>
 	 * 
 	 * 
-	 * @param the
-	 *            number of ticks to take into account to create the
+	 * @param count
+	 *            the number of ticks to take into account to create the
 	 *            {@link Formatter}.
 	 * @return a number format
 	 */
@@ -136,11 +136,11 @@ public class LogScale extends ContinuousQuantitativeScale<LogScale> {
 	 * precision will be automatically set by the scale.
 	 * <p>
 	 * 
-	 * @param the
-	 *            number of ticks to take into account to create the
+	 * @param count 
+	 *            the number of ticks to take into account to create the
 	 *            {@link Formatter}.
-	 * @param the
-	 *            format specified, as documented in {@link Formatter}, to be
+	 * @param formatSpecifier
+	 *            the format specified, as documented in {@link Formatter}, to be
 	 *            used as a basis of the Formatter.
 	 * @return a number format
 	 */

@@ -39,7 +39,7 @@ import java.util.Iterator;
  * 
  * @author SCHIOCA
  * 
- * @param <S>
+ * @param <T>
  */
 public abstract class ArrayIterator<T> implements Iterator<T> {
     /**

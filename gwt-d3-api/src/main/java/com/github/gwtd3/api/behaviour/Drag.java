@@ -92,7 +92,7 @@ public class Drag extends JavaScriptObject implements IsFunction {
      * 
      * @param type
      * @param listener
-     * @return
+     *
      */
     public final native Drag on(DragEventType type, DatumFunction<Void> listener)/*-{
 		return this

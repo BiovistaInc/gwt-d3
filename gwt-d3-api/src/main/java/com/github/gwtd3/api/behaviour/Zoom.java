@@ -167,8 +167,7 @@ public class Zoom extends JavaScriptObject implements IsFunction {
 	 * should be called again
 	 * <p>
 	 * 
-	 * @param the
-	 *            scale
+	 * @param scale
 	 * @return the current zoom object
 	 */
 	public final native Zoom y(QuantitativeScale<?> scale)/*-{
@@ -192,8 +191,8 @@ public class Zoom extends JavaScriptObject implements IsFunction {
 	 * which defaults to [0, Infinity].
 	 * <p>
 	 * 
-	 * @param the
-	 *            zoom scale's allowed range as a two-element array
+	 * @param scale
+	 *            the zoom scale's allowed range as a two-element array
 	 * @return the current zoom object
 	 */
 	public final native Zoom scaleExtent(Array<Double> scale)/*-{
@@ -290,8 +289,8 @@ public class Zoom extends JavaScriptObject implements IsFunction {
 	 * Specifies the current zoom translation vector.
 	 * <p>
 	 * 
-	 * @param the
-	 *            current zoom translation vector
+	 * @param vector
+	 *            the current zoom translation vector
 	 * @return the current zoom object
 	 */
 	public final native Zoom translate(Array<Double> vector)/*-{
@@ -328,7 +327,7 @@ public class Zoom extends JavaScriptObject implements IsFunction {
 	 * <p>
 	 * 
 	 * @param selection
-	 * @return
+	 *
 	 */
 	public final native Zoom event(Transition selection)/*-{
 		return this.event(selection);

@@ -48,9 +48,9 @@ public interface DatumFunction<T> {
 
 	/**
 	 * Apply the function for the given {@link Element} at the specified index
-	 * of the {@link Selection} mapped to the given {@link Datum}.
+	 * of the {@link Selection} mapped to the given Datum.
 	 * <p>
-	 * Note that if no datum is mapped to the element, {@link Datum#isUndefined()} will return true.
+	 * Note that if no datum is mapped to the element, Datum.isUndefined() will return true.
 	 * 
 	 * @param context
 	 *            the current element, may be irrelevant or null in some context.

@@ -37,7 +37,7 @@ import com.google.gwt.core.client.JavaScriptObject;
 /**
  * An interpolator is a function that maps a parametric value t in the domain [0,1] to a color, number or arbitrary value.
  * <p>
- * {@link D3} has many built-in interpolators to simplify the transitioning of arbitrary values; see the {@link D3#interpolate*()} methods.
+ * {@link D3} has many built-in interpolators to simplify the transitioning of arbitrary values; see the D3.interpolate() methods.
  * <p>
  * You should not directly implements this interface, but rather extend the class {@link CallableInterpolator}, if you need to pass your own
  * interpolator to D3.
@@ -47,7 +47,6 @@ import com.google.gwt.core.client.JavaScriptObject;
  * 
  */
 public interface Interpolator<T> {
-
 	/**
 	 * Return the domain value corresponding to the parametric value t.
 	 * 

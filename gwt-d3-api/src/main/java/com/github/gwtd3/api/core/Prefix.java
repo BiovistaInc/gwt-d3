@@ -33,7 +33,7 @@ import com.google.gwt.core.client.JavaScriptObject;
 
 /**
  * A <a href="http://en.wikipedia.org/wiki/Metric_prefix">SI Prefix</a>, as
- * returned by {@link D3#formatPrefix()}
+ * returned by {@link D3#formatPrefix(double, double)}
  * <p>
  * Example:
  * 

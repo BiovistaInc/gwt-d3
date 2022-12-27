@@ -40,7 +40,7 @@ public interface ForEachCallback<T> {
 	 * If thisArg is undefined or null, the this value within the function depends on whether the function is in strict mode or not (passed
 	 * value if in strict mode, global object if in non-strict mode).
 	 * 
-	 * @see https://developer.mozilla.org/en-US/docs/JavaScript/Reference/Global_Objects/Array/forEach
+	 * @see Array#forEach(ForEachCallback)
 	 * 
 	 * @param thisArg
 	 * @param element

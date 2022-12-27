@@ -54,7 +54,7 @@ public class JavascriptFunctionInterpolatorDecorator<T> implements Interpolator<
     /**
      * Cast the given value to the correct type.
      * @param v
-     * @return
+     *
      */
     public T cast(final Value v) {
         return v.as();

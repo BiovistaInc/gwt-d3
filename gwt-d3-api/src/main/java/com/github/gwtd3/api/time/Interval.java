@@ -89,7 +89,7 @@ public class Interval extends JavaScriptObject {
 	 * Alias for {@link #floor(JsDate)}.
 	 * 
 	 * @param date
-	 * @return
+	 *
 	 */
 	public final JsDate apply(JsDate date) {
 		return floor(date);
@@ -99,7 +99,7 @@ public class Interval extends JavaScriptObject {
 	 * Alias for {@link #floor(Date)}.
 	 * 
 	 * @param date
-	 * @return
+	 *
 	 */
 	public final Date apply(Date date) {
 		return floor(date);
@@ -109,7 +109,7 @@ public class Interval extends JavaScriptObject {
 	 * Alias for {@link #floor(double)}.
 	 * 
 	 * @param date
-	 * @return
+	 *
 	 */
 	public final double apply(double date) {
 		return floor(date);

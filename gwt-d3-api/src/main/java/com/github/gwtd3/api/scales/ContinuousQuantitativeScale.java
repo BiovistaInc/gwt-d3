@@ -31,7 +31,6 @@
  */
 package com.github.gwtd3.api.scales;
 
-import com.github.gwtd3.api.D3;
 import com.github.gwtd3.api.arrays.Array;
 import com.github.gwtd3.api.core.Value;
 import com.github.gwtd3.api.time.TimeScale;
@@ -61,7 +60,7 @@ public abstract class ContinuousQuantitativeScale<S extends ContinuousQuantitati
 	// =========== rangeRound ==========
 	/**
 	 * Sets the scale's output range to the specified array of values, while
-	 * also setting the scale's interpolator to {@link D3#interpolateRound()}.
+	 * also setting the scale's interpolator to D3.interpolateRound().
 	 * <p>
 	 * This is a convenience routine for when the values output by the scale
 	 * should be exact integers, such as to avoid antialiasing artifacts. It is
@@ -120,7 +119,7 @@ public abstract class ContinuousQuantitativeScale<S extends ContinuousQuantitati
 	 * facility to "uninterpolate" arbitrary types, the invert operator is
 	 * currently supported only on numeric ranges.
 	 * 
-	 * @return
+	 *
 	 */
 	public native final Value invert(double d)/*-{
 		return {

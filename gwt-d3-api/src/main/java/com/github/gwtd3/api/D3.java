@@ -170,7 +170,7 @@ public class D3 extends JavaScriptObject {
      * selection.
      *
      * @param selector
-     * @return
+     *
      */
     public static final native Selection selectAll(String selector)/*-{
 		return $wnd.d3.selectAll(selector);
@@ -239,7 +239,7 @@ public class D3 extends JavaScriptObject {
     /**
      * Selects the specified collection of elements.
      *
-     * @param nodes
+     * @param widgets
      *            the elements
      * @return the selection
      */
@@ -376,9 +376,6 @@ public class D3 extends JavaScriptObject {
      *
      * @param command
      *            the command to be executed until it returns true.
-     * @param delayMillis
-     *            the delay to expires before the command should start being
-     *            invoked (may be negative if markMillis is in the future)
      */
     public static final native void timer(TimerFunction command) /*-{
 		return $wnd.d3
@@ -538,7 +535,7 @@ public class D3 extends JavaScriptObject {
      * two-element array [ x, y].
      *
      * @param container
-     * @return
+     *
      */
     public static final native JsArrayNumber mouse(Node container)/*-{
 		return $wnd.d3.mouse(container);
@@ -551,7 +548,7 @@ public class D3 extends JavaScriptObject {
      * two-element array [ x, y].
      *
      * @param container
-     * @return
+     *
      */
     public static final native Coords mouseAsCoords(Node container)/*-{
 		var m = $wnd.d3.mouse(container);
@@ -568,7 +565,7 @@ public class D3 extends JavaScriptObject {
      * two-element array [ x, y].
      *
      * @param container
-     * @return
+     *
      */
     public static final native double mouseX(Node container)/*-{
 		return $wnd.d3.mouse(container)[0];
@@ -581,7 +578,7 @@ public class D3 extends JavaScriptObject {
      * two-element array [ x, y].
      *
      * @param container
-     * @return
+     *
      */
     public static final native double mouseY(Node container)/*-{
 		return $wnd.d3.mouse(container)[1];
@@ -832,7 +829,7 @@ public class D3 extends JavaScriptObject {
      *
      * @param value
      * @param digits
-     * @return
+     *
      */
     public static final native double round(double value, int digits)/*-{
 		return $wnd.d3.round(value, digits);

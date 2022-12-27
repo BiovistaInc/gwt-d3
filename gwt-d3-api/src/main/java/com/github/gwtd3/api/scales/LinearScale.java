@@ -108,7 +108,7 @@ public class LinearScale extends ContinuousQuantitativeScale<LinearScale> {
 	 * the scale may return more or fewer values depending on the input domain.
 	 * <p>
 	 * 
-	 * @return
+	 *
 	 */
 	public native final <T> Array<T> ticks(int count)/*-{
 		return this.ticks(count);
@@ -136,8 +136,8 @@ public class LinearScale extends ContinuousQuantitativeScale<LinearScale> {
 	 * interval between tick values.
 	 * <p>
 	 * 
-	 * @param the
-	 *            number of ticks to take into account to create the
+	 * @param count
+	 *            the number of ticks to take into account to create the
 	 *            {@link Formatter}.
 	 * @return a number format
 	 */
@@ -158,11 +158,11 @@ public class LinearScale extends ContinuousQuantitativeScale<LinearScale> {
 	 * precision will be automatically set by the scale.
 	 * <p>
 	 * 
-	 * @param the
-	 *            number of ticks to take into account to create the
+	 * @param count
+	 *            the number of ticks to take into account to create the
 	 *            {@link Formatter}.
-	 * @param the
-	 *            format specified, as documented in {@link Formatter}, to be
+	 * @param formatSpecifier
+	 *            the format specified, as documented in {@link Formatter}, to be
 	 *            used as a basis of the Formatter.
 	 * @return a number format
 	 */

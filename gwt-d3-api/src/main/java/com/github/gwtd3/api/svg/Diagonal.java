@@ -59,7 +59,7 @@ public class Diagonal
      * returning a two-element array of numbers. The default accessor assumes
      * that the input point is an object with x and y attributes.
      *
-     * The default accessor is thus compatible with D3's various {@link Node} layouts, including {@link Tree}, partition
+     * The default accessor is thus compatible with D3's various Node layouts, including {@link Tree}, partition
      * and cluster. For
      * example, to produce a radial diagonal see the <a
      * href=
@@ -82,7 +82,7 @@ public class Diagonal
      * returning a two-element array of numbers. The default accessor assumes
      * that the input point is an object with x and y attributes.
      *
-     * The default accessor is thus compatible with D3's various {@link Node} layouts, including {@link Tree}, partition
+     * The default accessor is thus compatible with D3's various Node layouts, including {@link Tree}, partition
      * and cluster. For
      * example, to produce a radial diagonal see the
      * <a href=
@@ -93,7 +93,7 @@ public class Diagonal
      * D3. The function is passed two arguments, the current source or target
      * point (derived from the current data, d) and the current index (i).
      *
-     * @param a datum function
+     * @param df a datum function
      * @return this diagonal object
      */
     public final native Diagonal projection(DatumFunction<?> df) /*-{
@@ -136,7 +136,7 @@ public class Diagonal
      * API reference</a> the source describes a point of x, y coordinates,
      * represented by the {@link Coords} class.
      *
-     * @param a constant source
+     * @param source a constant source
      * @return the diagonal object
      */
     public final native Diagonal source(Coords source) /*-{
@@ -150,7 +150,7 @@ public class Diagonal
      * API reference</a> the target describes a point of x, y coordinates,
      * represented by the {@link Coords} class.
      *
-     * @param a constant target
+     * @param target a constant target
      * @return the diagonal object
      */
     public final native Diagonal target(Coords target) /*-{
@@ -164,7 +164,7 @@ public class Diagonal
      * is passed two arguments, the current datum (d) and the current index (i).
      * It is also possible to specify the source-accessor as a constant {@link #source(Coords)} rather than a function.
      *
-     * @param the source accessor function
+     * @param df the source accessor function
      * @return the diagonal object
      */
     public final native Diagonal source(DatumFunction<?> df) /*-{
@@ -181,7 +181,7 @@ public class Diagonal
      * is passed two arguments, the current datum (d) and the current index (i).
      * It is also possible to specify the target-accessor as a constant {@link #target(Coords)} rather than a function.
      *
-     * @param the target accessor function
+     * @param df the target accessor function
      * @return the diagonal object
      */
     public final native Diagonal target(DatumFunction<?> df) /*-{

@@ -32,7 +32,7 @@ import com.github.gwtd3.api.core.Transition;
 
 /**
  * An easing function takes the current parameterized time value t in the domain [0,1],
- * and maps it to another value in a similar range; it is typically used to set {@link Transition#ease()}.
+ * and maps it to another value in a similar range; it is typically used to set {@link Transition#ease(EasingFunction)}.
  * <p>
  * Built-in {@link EasingFunction}s may be created using {@link Easing} factory.
  * <p>

@@ -58,7 +58,7 @@ public interface DsvArrayAccessor<T> {
 	 * 
 	 * @param row the current row as an array
 	 * @param index the index of the current row
-	 * @return
+	 *
 	 */
 	T parse(JsArrayString row, int index);
 }

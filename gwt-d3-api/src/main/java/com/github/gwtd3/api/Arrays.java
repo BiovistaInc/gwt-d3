@@ -58,7 +58,7 @@ public class Arrays {
      * array.
      *
      * @param array
-     * @return
+     *
      */
     public static final native <T> Array<Array<T>> pairs(Array<T> array)/*-{
 		return $wnd.d3.pairs(array);
@@ -325,7 +325,7 @@ public class Arrays {
      * <p>
      * This is the comparator function for natural order.
      *
-     * @return
+     *
      */
     public static final native Sort ascending() /*-{
 		return $wnd.d3.ascending;
@@ -336,7 +336,7 @@ public class Arrays {
      * <p>
      * This is the comparator function for reverse natural order.
      *
-     * @return
+     *
      */
     public static final native Sort descending() /*-{
 		return $wnd.d3.descending;
@@ -346,7 +346,6 @@ public class Arrays {
      * Generate a range of <code>stop-1</code> numeric values, stored in an
      * array, going from 0 to stop (excluded).
      *
-     * @see D3#range(double, double, double)
      * @param stop
      *            the maximum value (excluded)
      * @return the array
@@ -361,8 +360,6 @@ public class Arrays {
      * <p>
      * For instance, range(10, 3) would produce the array [0,3,6,9].
      *
-     *
-     * @see D3#range(double, double, double)
      * @param stop
      *            the maximum value (excluded)
      * @param step
@@ -396,7 +393,7 @@ public class Arrays {
      *            the maximum value (excluded)
      * @param step
      *            the step between each value
-     * @return
+     *
      */
     public static final native JavaScriptObject range(double start,
             double stop, double step) /*-{

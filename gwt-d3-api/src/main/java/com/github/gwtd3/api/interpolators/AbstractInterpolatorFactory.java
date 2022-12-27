@@ -31,12 +31,11 @@
  */
 package com.github.gwtd3.api.interpolators;
 
-import com.github.gwtd3.api.D3;
 import com.google.gwt.core.client.JavaScriptObject;
 
 /**
- * Use this class as a base class to create {@link InterpolatorFactory} implementations that can be passed to {@link D3#interpolators()
- * D3.interpolators().push()}.
+ * Use this class as a base class to create {@link InterpolatorFactory} implementations that can be passed to D3.interpolators()
+ * D3.interpolators().push().
  * <p>
  * 
  * 

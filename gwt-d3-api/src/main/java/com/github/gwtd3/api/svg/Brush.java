@@ -302,7 +302,7 @@ public class Brush extends JavaScriptObject implements IsFunction {
      * interrupted if the user starts brushing before the transition ends.
      *
      * @param selection
-     * @return
+     *
      */
     public final native Brush event(Selection selection) /*-{
 		return this.event(selection);

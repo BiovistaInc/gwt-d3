@@ -39,7 +39,7 @@ public interface SeparationFunction<T> {
      * 
      * @param a
      * @param b
-     * @return
+     *
      */
     double separation(T a, T b);
 }

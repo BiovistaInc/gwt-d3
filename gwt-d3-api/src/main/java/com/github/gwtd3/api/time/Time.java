@@ -70,7 +70,7 @@ public class Time extends JavaScriptObject {
 	 * and tick format are configured for UTC time.
 	 * <p>
 	 * 
-	 * @return
+	 *
 	 */
 	public final native TimeScale utc()/*-{
 		return this.scale.utc();
@@ -308,942 +308,942 @@ public class Time extends JavaScriptObject {
 	}-*/;
 
 	/**
-	 * Alias for {@link #second().range(JsDate start, JsDate stop)}.
+	 * Alias for second().range(JsDate start, JsDate stop).
 	 * 
 	 * @param start
 	 * @param stop
-	 * @return
+	 *
 	 */
 	public final Array<JsDate> seconds(final JsDate start, final JsDate stop) {
 		return second().range(start, stop);
 	}
 
 	/**
-	 * Alias for {@link #second().range(Date start, Date stop)}.
+	 * Alias for second().range(Date start, Date stop).
 	 * 
 	 * @param start
 	 * @param stop
-	 * @return
+	 *
 	 */
 	public final Array<JsDate> seconds(final Date start, final Date stop) {
 		return second().range(start, stop);
 	}
 
 	/**
-	 * Alias for {@link #second().range(double start, double stop)}.
+	 * Alias for second().range(double start, double stop).
 	 * 
 	 * @param start
 	 * @param stop
-	 * @return
+	 *
 	 */
 	public final Array<JsDate> seconds(final double start, final double stop) {
 		return second().range(start, stop);
 	}
 
 	/**
-	 * Alias for {@link #second().range(JsDate start, JsDate stop, double step)}
+	 * Alias for second().range(JsDate start, JsDate stop, double step)
 	 * .
 	 * 
 	 * @param start
 	 * @param stop
-	 * @return
+	 *
 	 */
 	public final Array<JsDate> seconds(final JsDate start, final JsDate stop, final double step) {
 		return second().range(start, stop, step);
 	}
 
 	/**
-	 * Alias for {@link #second().range(Date start, Date stop, double step)}.
+	 * Alias for second().range(Date start, Date stop, double step).
 	 * 
 	 * @param start
 	 * @param stop
-	 * @return
+	 *
 	 */
 	public final Array<JsDate> seconds(final Date start, final Date stop, final double step) {
 		return second().range(start, stop, step);
 	}
 
 	/**
-	 * Alias for {@link #second().range(double start, double stop, double step)}
+	 * Alias for range(double start, double stop, double step).
 	 * .
 	 * 
 	 * @param start
 	 * @param stop
-	 * @return
+	 *
 	 */
 	public final Array<JsDate> seconds(final double start, final double stop, final double step) {
 		return second().range(start, stop, step);
 	}
 
 	/**
-	 * Alias for {@link #minute().range(JsDate start, JsDate stop)}.
+	 * Alias for minute().range(JsDate start, JsDate stop).
 	 * 
 	 * @param start
 	 * @param stop
-	 * @return
+	 *
 	 */
 	public final Array<JsDate> minutes(final JsDate start, final JsDate stop) {
 		return minute().range(start, stop);
 	}
 
 	/**
-	 * Alias for {@link #minute().range(Date start, Date stop)}.
+	 * Alias for minute().range(Date start, Date stop).
 	 * 
 	 * @param start
 	 * @param stop
-	 * @return
+	 *
 	 */
 	public final Array<JsDate> minutes(final Date start, final Date stop) {
 		return minute().range(start, stop);
 	}
 
 	/**
-	 * Alias for {@link #minute().range(double start, double stop)}.
+	 * Alias for minute().range(double start, double stop).
 	 * 
 	 * @param start
 	 * @param stop
-	 * @return
+	 *
 	 */
 	public final Array<JsDate> minutes(final double start, final double stop) {
 		return minute().range(start, stop);
 	}
 
 	/**
-	 * Alias for {@link #minute().range(JsDate start, JsDate stop, double step)}
+	 * Alias for minute().range(JsDate start, JsDate stop, double step)
 	 * .
 	 * 
 	 * @param start
 	 * @param stop
-	 * @return
+	 *
 	 */
 	public final Array<JsDate> minutes(final JsDate start, final JsDate stop, final double step) {
 		return minute().range(start, stop, step);
 	}
 
 	/**
-	 * Alias for {@link #minute().range(Date start, Date stop, double step)}.
+	 * Alias for minute().range(Date start, Date stop, double step).
 	 * 
 	 * @param start
 	 * @param stop
-	 * @return
+	 *
 	 */
 	public final Array<JsDate> minutes(final Date start, final Date stop, final double step) {
 		return minute().range(start, stop, step);
 	}
 
 	/**
-	 * Alias for {@link #minute().range(double start, double stop, double step)}
+	 * Alias for minute().range(double start, double stop, double step)
 	 * .
 	 * 
 	 * @param start
 	 * @param stop
-	 * @return
+	 *
 	 */
 	public final Array<JsDate> minutes(final double start, final double stop, final double step) {
 		return minute().range(start, stop, step);
 	}
 
 	/**
-	 * Alias for {@link #hour().range(JsDate start, JsDate stop)}.
+	 * Alias for hour().range(JsDate start, JsDate stop).
 	 * 
 	 * @param start
 	 * @param stop
-	 * @return
+	 *
 	 */
 	public final Array<JsDate> hours(final JsDate start, final JsDate stop) {
 		return hour().range(start, stop);
 	}
 
 	/**
-	 * Alias for {@link #hour().range(Date start, Date stop)}.
+	 * Alias for hour().range(Date start, Date stop).
 	 * 
 	 * @param start
 	 * @param stop
-	 * @return
+	 *
 	 */
 	public final Array<JsDate> hours(final Date start, final Date stop) {
 		return hour().range(start, stop);
 	}
 
 	/**
-	 * Alias for {@link #hour().range(double start, double stop)}.
+	 * Alias for hour().range(double start, double stop).
 	 * 
 	 * @param start
 	 * @param stop
-	 * @return
+	 *
 	 */
 	public final Array<JsDate> hours(final double start, final double stop) {
 		return hour().range(start, stop);
 	}
 
 	/**
-	 * Alias for {@link #hour().range(JsDate start, JsDate stop, double step)}.
+	 * Alias for hour().range(JsDate start, JsDate stop, double step).
 	 * 
 	 * @param start
 	 * @param stop
-	 * @return
+	 *
 	 */
 	public final Array<JsDate> hours(final JsDate start, final JsDate stop, final double step) {
 		return hour().range(start, stop, step);
 	}
 
 	/**
-	 * Alias for {@link #hour().range(Date start, Date stop, double step)}.
+	 * Alias for hour().range(Date start, Date stop, double step).
 	 * 
 	 * @param start
 	 * @param stop
-	 * @return
+	 *
 	 */
 	public final Array<JsDate> hours(final Date start, final Date stop, final double step) {
 		return hour().range(start, stop, step);
 	}
 
 	/**
-	 * Alias for {@link #hour().range(double start, double stop, double step)}.
+	 * Alias for hour().range(double start, double stop, double step).
 	 * 
 	 * @param start
 	 * @param stop
-	 * @return
+	 *
 	 */
 	public final Array<JsDate> hours(final double start, final double stop, final double step) {
 		return hour().range(start, stop, step);
 	}
 
 	/**
-	 * Alias for {@link #day().range(JsDate start, JsDate stop)}.
+	 * Alias for day().range(JsDate start, JsDate stop).
 	 * 
 	 * @param start
 	 * @param stop
-	 * @return
+	 *
 	 */
 	public final Array<JsDate> days(final JsDate start, final JsDate stop) {
 		return day().range(start, stop);
 	}
 
 	/**
-	 * Alias for {@link #day().range(Date start, Date stop)}.
+	 * Alias for day().range(Date start, Date stop).
 	 * 
 	 * @param start
 	 * @param stop
-	 * @return
+	 *
 	 */
 	public final Array<JsDate> days(final Date start, final Date stop) {
 		return day().range(start, stop);
 	}
 
 	/**
-	 * Alias for {@link #day().range(double start, double stop)}.
+	 * Alias for day().range(double start, double stop).
 	 * 
 	 * @param start
 	 * @param stop
-	 * @return
+	 *
 	 */
 	public final Array<JsDate> days(final double start, final double stop) {
 		return day().range(start, stop);
 	}
 
 	/**
-	 * Alias for {@link #day().range(JsDate start, JsDate stop, double step)}.
+	 * Alias for day().range(JsDate start, JsDate stop, double step).
 	 * 
 	 * @param start
 	 * @param stop
-	 * @return
+	 *
 	 */
 	public final Array<JsDate> days(final JsDate start, final JsDate stop, final double step) {
 		return day().range(start, stop, step);
 	}
 
 	/**
-	 * Alias for {@link #day().range(Date start, Date stop, double step)}.
+	 * Alias for day().range(Date start, Date stop, double step).
 	 * 
 	 * @param start
 	 * @param stop
-	 * @return
+	 *
 	 */
 	public final Array<JsDate> days(final Date start, final Date stop, final double step) {
 		return day().range(start, stop, step);
 	}
 
 	/**
-	 * Alias for {@link #day().range(double start, double stop, double step)}.
+	 * Alias for day().range(double start, double stop, double step).
 	 * 
 	 * @param start
 	 * @param stop
-	 * @return
+	 *
 	 */
 	public final Array<JsDate> days(final double start, final double stop, final double step) {
 		return day().range(start, stop, step);
 	}
 
 	/**
-	 * Alias for {@link #week().range(JsDate start, JsDate stop)}.
+	 * Alias for week().range(JsDate start, JsDate stop).
 	 * 
 	 * @param start
 	 * @param stop
-	 * @return
+	 *
 	 */
 	public final Array<JsDate> weeks(final JsDate start, final JsDate stop) {
 		return week().range(start, stop);
 	}
 
 	/**
-	 * Alias for {@link #week().range(Date start, Date stop)}.
+	 * Alias for week().range(Date start, Date stop).
 	 * 
 	 * @param start
 	 * @param stop
-	 * @return
+	 *
 	 */
 	public final Array<JsDate> weeks(final Date start, final Date stop) {
 		return week().range(start, stop);
 	}
 
 	/**
-	 * Alias for {@link #week().range(double start, double stop)}.
+	 * Alias for week().range(double start, double stop).
 	 * 
 	 * @param start
 	 * @param stop
-	 * @return
+	 *
 	 */
 	public final Array<JsDate> weeks(final double start, final double stop) {
 		return week().range(start, stop);
 	}
 
 	/**
-	 * Alias for {@link #week().range(JsDate start, JsDate stop, double step)}.
+	 * Alias for week().range(JsDate start, JsDate stop, double step).
 	 * 
 	 * @param start
 	 * @param stop
-	 * @return
+	 *
 	 */
 	public final Array<JsDate> weeks(final JsDate start, final JsDate stop, final double step) {
 		return week().range(start, stop, step);
 	}
 
 	/**
-	 * Alias for {@link #week().range(Date start, Date stop, double step)}.
+	 * Alias for week().range(Date start, Date stop, double step).
 	 * 
 	 * @param start
 	 * @param stop
-	 * @return
+	 *
 	 */
 	public final Array<JsDate> weeks(final Date start, final Date stop, final double step) {
 		return week().range(start, stop, step);
 	}
 
 	/**
-	 * Alias for {@link #week().range(double start, double stop, double step)}.
+	 * Alias for week().range(double start, double stop, double step).
 	 * 
 	 * @param start
 	 * @param stop
-	 * @return
+	 *
 	 */
 	public final Array<JsDate> weeks(final double start, final double stop, final double step) {
 		return week().range(start, stop, step);
 	}
 
 	/**
-	 * Alias for {@link #sunday().range(JsDate start, JsDate stop)}.
+	 * Alias for sunday().range(JsDate start, JsDate stop).
 	 * 
 	 * @param start
 	 * @param stop
-	 * @return
+	 *
 	 */
 	public final Array<JsDate> sundays(final JsDate start, final JsDate stop) {
 		return sunday().range(start, stop);
 	}
 
 	/**
-	 * Alias for {@link #sunday().range(Date start, Date stop)}.
+	 * Alias for sunday().range(Date start, Date stop).
 	 * 
 	 * @param start
 	 * @param stop
-	 * @return
+	 *
 	 */
 	public final Array<JsDate> sundays(final Date start, final Date stop) {
 		return sunday().range(start, stop);
 	}
 
 	/**
-	 * Alias for {@link #sunday().range(double start, double stop)}.
+	 * Alias for sunday().range(double start, double stop).
 	 * 
 	 * @param start
 	 * @param stop
-	 * @return
+	 *
 	 */
 	public final Array<JsDate> sundays(final double start, final double stop) {
 		return sunday().range(start, stop);
 	}
 
 	/**
-	 * Alias for {@link #sunday().range(JsDate start, JsDate stop, double step)}
+	 * Alias for sunday().range(JsDate start, JsDate stop, double step)
 	 * .
 	 * 
 	 * @param start
 	 * @param stop
-	 * @return
+	 *
 	 */
 	public final Array<JsDate> sundays(final JsDate start, final JsDate stop, final double step) {
 		return sunday().range(start, stop, step);
 	}
 
 	/**
-	 * Alias for {@link #sunday().range(Date start, Date stop, double step)}.
+	 * Alias for sunday().range(Date start, Date stop, double step).
 	 * 
 	 * @param start
 	 * @param stop
-	 * @return
+	 *
 	 */
 	public final Array<JsDate> sundays(final Date start, final Date stop, final double step) {
 		return sunday().range(start, stop, step);
 	}
 
 	/**
-	 * Alias for {@link #sunday().range(double start, double stop, double step)}
+	 * Alias for sunday().range(double start, double stop, double step)
 	 * .
 	 * 
 	 * @param start
 	 * @param stop
-	 * @return
+	 *
 	 */
 	public final Array<JsDate> sundays(final double start, final double stop, final double step) {
 		return sunday().range(start, stop, step);
 	}
 
 	/**
-	 * Alias for {@link #monday().range(JsDate start, JsDate stop)}.
+	 * Alias for monday().range(JsDate start, JsDate stop).
 	 * 
 	 * @param start
 	 * @param stop
-	 * @return
+	 *
 	 */
 	public final Array<JsDate> mondays(final JsDate start, final JsDate stop) {
 		return monday().range(start, stop);
 	}
 
 	/**
-	 * Alias for {@link #monday().range(Date start, Date stop)}.
+	 * Alias for monday().range(Date start, Date stop).
 	 * 
 	 * @param start
 	 * @param stop
-	 * @return
+	 *
 	 */
 	public final Array<JsDate> mondays(final Date start, final Date stop) {
 		return monday().range(start, stop);
 	}
 
 	/**
-	 * Alias for {@link #monday().range(double start, double stop)}.
+	 * Alias for monday().range(double start, double stop).
 	 * 
 	 * @param start
 	 * @param stop
-	 * @return
+	 *
 	 */
 	public final Array<JsDate> mondays(final double start, final double stop) {
 		return monday().range(start, stop);
 	}
 
 	/**
-	 * Alias for {@link #monday().range(JsDate start, JsDate stop, double step)}
+	 * Alias for monday().range(JsDate start, JsDate stop, double step)
 	 * .
 	 * 
 	 * @param start
 	 * @param stop
-	 * @return
+	 *
 	 */
 	public final Array<JsDate> mondays(final JsDate start, final JsDate stop, final double step) {
 		return monday().range(start, stop, step);
 	}
 
 	/**
-	 * Alias for {@link #monday().range(Date start, Date stop, double step)}.
+	 * Alias for monday().range(Date start, Date stop, double step).
 	 * 
 	 * @param start
 	 * @param stop
-	 * @return
+	 *
 	 */
 	public final Array<JsDate> mondays(final Date start, final Date stop, final double step) {
 		return monday().range(start, stop, step);
 	}
 
 	/**
-	 * Alias for {@link #monday().range(double start, double stop, double step)}
+	 * Alias for monday().range(double start, double stop, double step)
 	 * .
 	 * 
 	 * @param start
 	 * @param stop
-	 * @return
+	 *
 	 */
 	public final Array<JsDate> mondays(final double start, final double stop, final double step) {
 		return monday().range(start, stop, step);
 	}
 
 	/**
-	 * Alias for {@link #tuesday().range(JsDate start, JsDate stop)}.
+	 * Alias for tuesday().range(JsDate start, JsDate stop).
 	 * 
 	 * @param start
 	 * @param stop
-	 * @return
+	 *
 	 */
 	public final Array<JsDate> tuesdays(final JsDate start, final JsDate stop) {
 		return tuesday().range(start, stop);
 	}
 
 	/**
-	 * Alias for {@link #tuesday().range(Date start, Date stop)}.
+	 * Alias for tuesday().range(Date start, Date stop).
 	 * 
 	 * @param start
 	 * @param stop
-	 * @return
+	 *
 	 */
 	public final Array<JsDate> tuesdays(final Date start, final Date stop) {
 		return tuesday().range(start, stop);
 	}
 
 	/**
-	 * Alias for {@link #tuesday().range(double start, double stop)}.
+	 * Alias for tuesday().range(double start, double stop).
 	 * 
 	 * @param start
 	 * @param stop
-	 * @return
+	 *
 	 */
 	public final Array<JsDate> tuesdays(final double start, final double stop) {
 		return tuesday().range(start, stop);
 	}
 
 	/**
-	 * Alias for {@link #tuesday().range(JsDate start, JsDate stop, double
+	 * Alias for tuesday().range(JsDate start, JsDate stop, double).
 	 * step)}.
 	 * 
 	 * @param start
 	 * @param stop
-	 * @return
+	 *
 	 */
 	public final Array<JsDate> tuesdays(final JsDate start, final JsDate stop, final double step) {
 		return tuesday().range(start, stop, step);
 	}
 
 	/**
-	 * Alias for {@link #tuesday().range(Date start, Date stop, double step)}.
+	 * Alias for tuesday().range(Date start, Date stop, double step).
 	 * 
 	 * @param start
 	 * @param stop
-	 * @return
+	 *
 	 */
 	public final Array<JsDate> tuesdays(final Date start, final Date stop, final double step) {
 		return tuesday().range(start, stop, step);
 	}
 
 	/**
-	 * Alias for {@link #tuesday().range(double start, double stop, double
+	 * Alias for tuesday().range(double start, double stop, double).
 	 * step)}.
 	 * 
 	 * @param start
 	 * @param stop
-	 * @return
+	 *
 	 */
 	public final Array<JsDate> tuesdays(final double start, final double stop, final double step) {
 		return tuesday().range(start, stop, step);
 	}
 
 	/**
-	 * Alias for {@link #wednesday().range(JsDate start, JsDate stop)}.
+	 * Alias for wednesday().range(JsDate start, JsDate stop).
 	 * 
 	 * @param start
 	 * @param stop
-	 * @return
+	 *
 	 */
 	public final Array<JsDate> wednesdays(final JsDate start, final JsDate stop) {
 		return wednesday().range(start, stop);
 	}
 
 	/**
-	 * Alias for {@link #wednesday().range(Date start, Date stop)}.
+	 * Alias for wednesday().range(Date start, Date stop).
 	 * 
 	 * @param start
 	 * @param stop
-	 * @return
+	 *
 	 */
 	public final Array<JsDate> wednesdays(final Date start, final Date stop) {
 		return wednesday().range(start, stop);
 	}
 
 	/**
-	 * Alias for {@link #wednesday().range(double start, double stop)}.
+	 * Alias for wednesday().range(double start, double stop).
 	 * 
 	 * @param start
 	 * @param stop
-	 * @return
+	 *
 	 */
 	public final Array<JsDate> wednesdays(final double start, final double stop) {
 		return wednesday().range(start, stop);
 	}
 
 	/**
-	 * Alias for {@link #wednesday().range(JsDate start, JsDate stop, double
+	 * Alias for wednesday().range(JsDate start, JsDate stop, double).
 	 * step)}.
 	 * 
 	 * @param start
 	 * @param stop
-	 * @return
+	 *
 	 */
 	public final Array<JsDate> wednesdays(final JsDate start, final JsDate stop, final double step) {
 		return wednesday().range(start, stop, step);
 	}
 
 	/**
-	 * Alias for {@link #wednesday().range(Date start, Date stop, double step)}.
+	 * Alias for wednesday().range(Date start, Date stop, double step).
 	 * 
 	 * @param start
 	 * @param stop
-	 * @return
+	 *
 	 */
 	public final Array<JsDate> wednesdays(final Date start, final Date stop, final double step) {
 		return wednesday().range(start, stop, step);
 	}
 
 	/**
-	 * Alias for {@link #wednesday().range(double start, double stop, double
+	 * Alias for wednesday().range(double start, double stop, double).
 	 * step)}.
 	 * 
 	 * @param start
 	 * @param stop
-	 * @return
+	 *
 	 */
 	public final Array<JsDate> wednesdays(final double start, final double stop, final double step) {
 		return wednesday().range(start, stop, step);
 	}
 
 	/**
-	 * Alias for {@link #thursday().range(JsDate start, JsDate stop)}.
+	 * Alias for thursday().range(JsDate start, JsDate stop).
 	 * 
 	 * @param start
 	 * @param stop
-	 * @return
+	 *
 	 */
 	public final Array<JsDate> thursdays(final JsDate start, final JsDate stop) {
 		return thursday().range(start, stop);
 	}
 
 	/**
-	 * Alias for {@link #thursday().range(Date start, Date stop)}.
+	 * Alias for thursday().range(Date start, Date stop).
 	 * 
 	 * @param start
 	 * @param stop
-	 * @return
+	 *
 	 */
 	public final Array<JsDate> thursdays(final Date start, final Date stop) {
 		return thursday().range(start, stop);
 	}
 
 	/**
-	 * Alias for {@link #thursday().range(double start, double stop)}.
+	 * Alias for thursday().range(double start, double stop).
 	 * 
 	 * @param start
 	 * @param stop
-	 * @return
+	 *
 	 */
 	public final Array<JsDate> thursdays(final double start, final double stop) {
 		return thursday().range(start, stop);
 	}
 
 	/**
-	 * Alias for {@link #thursday().range(JsDate start, JsDate stop, double
+	 * Alias for thursday().range(JsDate start, JsDate stop, double).
 	 * step)}.
 	 * 
 	 * @param start
 	 * @param stop
-	 * @return
+	 *
 	 */
 	public final Array<JsDate> thursdays(final JsDate start, final JsDate stop, final double step) {
 		return thursday().range(start, stop, step);
 	}
 
 	/**
-	 * Alias for {@link #thursday().range(Date start, Date stop, double step)}.
+	 * Alias for thursday().range(Date start, Date stop, double step).
 	 * 
 	 * @param start
 	 * @param stop
-	 * @return
+	 *
 	 */
 	public final Array<JsDate> thursdays(final Date start, final Date stop, final double step) {
 		return thursday().range(start, stop, step);
 	}
 
 	/**
-	 * Alias for {@link #thursday().range(double start, double stop, double
+	 * Alias for thursday().range(double start, double stop, double).
 	 * step)}.
 	 * 
 	 * @param start
 	 * @param stop
-	 * @return
+	 *
 	 */
 	public final Array<JsDate> thursdays(final double start, final double stop, final double step) {
 		return thursday().range(start, stop, step);
 	}
 
 	/**
-	 * Alias for {@link #friday().range(JsDate start, JsDate stop)}.
+	 * Alias for friday().range(JsDate start, JsDate stop).
 	 * 
 	 * @param start
 	 * @param stop
-	 * @return
+	 *
 	 */
 	public final Array<JsDate> fridays(final JsDate start, final JsDate stop) {
 		return friday().range(start, stop);
 	}
 
 	/**
-	 * Alias for {@link #friday().range(Date start, Date stop)}.
+	 * Alias for friday().range(Date start, Date stop).
 	 * 
 	 * @param start
 	 * @param stop
-	 * @return
+	 *
 	 */
 	public final Array<JsDate> fridays(final Date start, final Date stop) {
 		return friday().range(start, stop);
 	}
 
 	/**
-	 * Alias for {@link #friday().range(double start, double stop)}.
+	 * Alias for friday().range(double start, double stop).
 	 * 
 	 * @param start
 	 * @param stop
-	 * @return
+	 *
 	 */
 	public final Array<JsDate> fridays(final double start, final double stop) {
 		return friday().range(start, stop);
 	}
 
 	/**
-	 * Alias for {@link #friday().range(JsDate start, JsDate stop, double step)}
+	 * Alias for friday().range(JsDate start, JsDate stop, double step).
 	 * .
 	 * 
 	 * @param start
 	 * @param stop
-	 * @return
+	 *
 	 */
 	public final Array<JsDate> fridays(final JsDate start, final JsDate stop, final double step) {
 		return friday().range(start, stop, step);
 	}
 
 	/**
-	 * Alias for {@link #friday().range(Date start, Date stop, double step)}.
+	 * Alias for friday().range(Date start, Date stop, double step).
 	 * 
 	 * @param start
 	 * @param stop
-	 * @return
+	 *
 	 */
 	public final Array<JsDate> fridays(final Date start, final Date stop, final double step) {
 		return friday().range(start, stop, step);
 	}
 
 	/**
-	 * Alias for {@link #friday().range(double start, double stop, double step)}
+	 * Alias for friday().range(double start, double stop, double step).
 	 * .
 	 * 
 	 * @param start
 	 * @param stop
-	 * @return
+	 *
 	 */
 	public final Array<JsDate> fridays(final double start, final double stop, final double step) {
 		return friday().range(start, stop, step);
 	}
 
 	/**
-	 * Alias for {@link #saturday().range(JsDate start, JsDate stop)}.
+	 * Alias for saturday().range(JsDate start, JsDate stop).
 	 * 
 	 * @param start
 	 * @param stop
-	 * @return
+	 *
 	 */
 	public final Array<JsDate> saturdays(final JsDate start, final JsDate stop) {
 		return saturday().range(start, stop);
 	}
 
 	/**
-	 * Alias for {@link #saturday().range(Date start, Date stop)}.
+	 * Alias for saturday().range(Date start, Date stop).
 	 * 
 	 * @param start
 	 * @param stop
-	 * @return
+	 *
 	 */
 	public final Array<JsDate> saturdays(final Date start, final Date stop) {
 		return saturday().range(start, stop);
 	}
 
 	/**
-	 * Alias for {@link #saturday().range(double start, double stop)}.
+	 * Alias for saturday().range(double start, double stop).
 	 * 
 	 * @param start
 	 * @param stop
-	 * @return
+	 *
 	 */
 	public final Array<JsDate> saturdays(final double start, final double stop) {
 		return saturday().range(start, stop);
 	}
 
 	/**
-	 * Alias for {@link #saturday().range(JsDate start, JsDate stop, double
+	 * Alias for saturday().range(JsDate start, JsDate stop, double).
 	 * step)}.
 	 * 
 	 * @param start
 	 * @param stop
-	 * @return
+	 *
 	 */
 	public final Array<JsDate> saturdays(final JsDate start, final JsDate stop, final double step) {
 		return saturday().range(start, stop, step);
 	}
 
 	/**
-	 * Alias for {@link #saturday().range(Date start, Date stop, double step)}.
+	 * Alias for saturday().range(Date start, Date stop, double step).
 	 * 
 	 * @param start
 	 * @param stop
-	 * @return
+	 *
 	 */
 	public final Array<JsDate> saturdays(final Date start, final Date stop, final double step) {
 		return saturday().range(start, stop, step);
 	}
 
 	/**
-	 * Alias for {@link #saturday().range(double start, double stop, double
+	 * Alias for saturday().range(double start, double stop, double).
 	 * step)}.
 	 * 
 	 * @param start
 	 * @param stop
-	 * @return
+	 *
 	 */
 	public final Array<JsDate> saturdays(final double start, final double stop, final double step) {
 		return saturday().range(start, stop, step);
 	}
 
 	/**
-	 * Alias for {@link #month().range(JsDate start, JsDate stop)}.
+	 * Alias for month().range(JsDate start, JsDate stop).
 	 * 
 	 * @param start
 	 * @param stop
-	 * @return
+	 *
 	 */
 	public final Array<JsDate> months(final JsDate start, final JsDate stop) {
 		return month().range(start, stop);
 	}
 
 	/**
-	 * Alias for {@link #month().range(Date start, Date stop)}.
+	 * Alias for month().range(Date start, Date stop).
 	 * 
 	 * @param start
 	 * @param stop
-	 * @return
+	 *
 	 */
 	public final Array<JsDate> months(final Date start, final Date stop) {
 		return month().range(start, stop);
 	}
 
 	/**
-	 * Alias for {@link #month().range(double start, double stop)}.
+	 * Alias for month().range(double start, double stop).
 	 * 
 	 * @param start
 	 * @param stop
-	 * @return
+	 *
 	 */
 	public final Array<JsDate> months(final double start, final double stop) {
 		return month().range(start, stop);
 	}
 
 	/**
-	 * Alias for {@link #month().range(JsDate start, JsDate stop, double step)}.
+	 * Alias for month().range(JsDate start, JsDate stop, double step).
 	 * 
 	 * @param start
 	 * @param stop
-	 * @return
+	 *
 	 */
 	public final Array<JsDate> months(final JsDate start, final JsDate stop, final double step) {
 		return month().range(start, stop, step);
 	}
 
 	/**
-	 * Alias for {@link #month().range(Date start, Date stop, double step)}.
+	 * Alias for month().range(Date start, Date stop, double step).
 	 * 
 	 * @param start
 	 * @param stop
-	 * @return
+	 *
 	 */
 	public final Array<JsDate> months(final Date start, final Date stop, final double step) {
 		return month().range(start, stop, step);
 	}
 
 	/**
-	 * Alias for {@link #month().range(double start, double stop, double step)}.
+	 * Alias for month().range(double start, double stop, double step).
 	 * 
 	 * @param start
 	 * @param stop
-	 * @return
+	 *
 	 */
 	public final Array<JsDate> months(final double start, final double stop, final double step) {
 		return month().range(start, stop, step);
 	}
 
 	/**
-	 * Alias for {@link #year().range(JsDate start, JsDate stop)}.
+	 * Alias for year().range(JsDate start, JsDate stop).
 	 * 
 	 * @param start
 	 * @param stop
-	 * @return
+	 *
 	 */
 	public final Array<JsDate> years(final JsDate start, final JsDate stop) {
 		return year().range(start, stop);
 	}
 
 	/**
-	 * Alias for {@link #year().range(Date start, Date stop)}.
+	 * Alias for year().range(Date start, Date stop).
 	 * 
 	 * @param start
 	 * @param stop
-	 * @return
+	 *
 	 */
 	public final Array<JsDate> years(final Date start, final Date stop) {
 		return year().range(start, stop);
 	}
 
 	/**
-	 * Alias for {@link #year().range(double start, double stop)}.
+	 * Alias for year().range(double start, double stop).
 	 * 
 	 * @param start
 	 * @param stop
-	 * @return
+	 *
 	 */
 	public final Array<JsDate> years(final double start, final double stop) {
 		return year().range(start, stop);
 	}
 
 	/**
-	 * Alias for {@link #year().range(JsDate start, JsDate stop, double step)}.
+	 * Alias for year().range(JsDate start, JsDate stop, double step).
 	 * 
 	 * @param start
 	 * @param stop
-	 * @return
+	 *
 	 */
 	public final Array<JsDate> years(final JsDate start, final JsDate stop, final double step) {
 		return year().range(start, stop, step);
 	}
 
 	/**
-	 * Alias for {@link #year().range(Date start, Date stop, double step)}.
+	 * Alias for year().range(Date start, Date stop, double step).
 	 * 
 	 * @param start
 	 * @param stop
-	 * @return
+	 *
 	 */
 	public final Array<JsDate> years(final Date start, final Date stop, final double step) {
 		return year().range(start, stop, step);
 	}
 
 	/**
-	 * Alias for {@link #year().range(double start, double stop, double step)}.
+	 * Alias for year().range(double start, double stop, double step).
 	 * 
 	 * @param start
 	 * @param stop
-	 * @return
+	 *
 	 */
 	public final Array<JsDate> years(final double start, final double stop, final double step) {
 		return year().range(start, stop, step);
@@ -1266,7 +1266,7 @@ public class Time extends JavaScriptObject {
 	 * Alias for {@link #dayOfYear(JsDate)} for a Java date.
 	 * 
 	 * @param date
-	 * @return
+	 *
 	 */
 	public final int dayOfYear(final Date date) {
 		return this.dayOfYear(JsDate.create(date.getTime()));
@@ -1276,7 +1276,7 @@ public class Time extends JavaScriptObject {
 	 * Alias for {@link #dayOfYear(JsDate)} for a double.
 	 * 
 	 * @param date
-	 * @return
+	 *
 	 */
 	public final int dayOfYear(final double date) {
 		return this.dayOfYear(JsDate.create(date));
@@ -1301,7 +1301,7 @@ public class Time extends JavaScriptObject {
 	 * Alias for {@link #weekOfYear(JsDate)} for a Java date.
 	 * 
 	 * @param date
-	 * @return
+	 *
 	 */
 	public final int weekOfYear(final Date date) {
 		return this.weekOfYear(JsDate.create(date.getTime()));
@@ -1311,7 +1311,7 @@ public class Time extends JavaScriptObject {
 	 * Alias for {@link #weekOfYear(JsDate)} for a double.
 	 * 
 	 * @param date
-	 * @return
+	 *
 	 */
 	public final int weekOfYear(final double date) {
 		return this.weekOfYear(JsDate.create(date));
@@ -1336,7 +1336,7 @@ public class Time extends JavaScriptObject {
 	 * Alias for {@link #sundayOfYear(JsDate)} for a Java date.
 	 * 
 	 * @param date
-	 * @return
+	 *
 	 */
 	public final int sundayOfYear(final Date date) {
 		return this.sundayOfYear(JsDate.create(date.getTime()));
@@ -1346,7 +1346,7 @@ public class Time extends JavaScriptObject {
 	 * Alias for {@link #sundayOfYear(JsDate)} for a double.
 	 * 
 	 * @param date
-	 * @return
+	 *
 	 */
 	public final int sundayOfYear(final double date) {
 		return this.sundayOfYear(JsDate.create(date));
@@ -1371,7 +1371,7 @@ public class Time extends JavaScriptObject {
 	 * Alias for {@link #mondayOfYear(JsDate)} for a Java date.
 	 * 
 	 * @param date
-	 * @return
+	 *
 	 */
 	public final int mondayOfYear(final Date date) {
 		return this.mondayOfYear(JsDate.create(date.getTime()));
@@ -1381,7 +1381,7 @@ public class Time extends JavaScriptObject {
 	 * Alias for {@link #mondayOfYear(JsDate)} for a double.
 	 * 
 	 * @param date
-	 * @return
+	 *
 	 */
 	public final int mondayOfYear(final double date) {
 		return this.mondayOfYear(JsDate.create(date));
@@ -1406,7 +1406,7 @@ public class Time extends JavaScriptObject {
 	 * Alias for {@link #tuesdayOfYear(JsDate)} for a Java date.
 	 * 
 	 * @param date
-	 * @return
+	 *
 	 */
 	public final int tuesdayOfYear(final Date date) {
 		return this.tuesdayOfYear(JsDate.create(date.getTime()));
@@ -1416,7 +1416,7 @@ public class Time extends JavaScriptObject {
 	 * Alias for {@link #tuesdayOfYear(JsDate)} for a double.
 	 * 
 	 * @param date
-	 * @return
+	 *
 	 */
 	public final int tuesdayOfYear(final double date) {
 		return this.tuesdayOfYear(JsDate.create(date));
@@ -1441,7 +1441,7 @@ public class Time extends JavaScriptObject {
 	 * Alias for {@link #wednesdayOfYear(JsDate)} for a Java date.
 	 * 
 	 * @param date
-	 * @return
+	 *
 	 */
 	public final int wednesdayOfYear(final Date date) {
 		return this.wednesdayOfYear(JsDate.create(date.getTime()));
@@ -1451,7 +1451,7 @@ public class Time extends JavaScriptObject {
 	 * Alias for {@link #wednesdayOfYear(JsDate)} for a double.
 	 * 
 	 * @param date
-	 * @return
+	 *
 	 */
 	public final int wednesdayOfYear(final double date) {
 		return this.wednesdayOfYear(JsDate.create(date));
@@ -1476,7 +1476,7 @@ public class Time extends JavaScriptObject {
 	 * Alias for {@link #thursdayOfYear(JsDate)} for a Java date.
 	 * 
 	 * @param date
-	 * @return
+	 *
 	 */
 	public final int thursdayOfYear(final Date date) {
 		return this.thursdayOfYear(JsDate.create(date.getTime()));
@@ -1486,7 +1486,7 @@ public class Time extends JavaScriptObject {
 	 * Alias for {@link #thursdayOfYear(JsDate)} for a double.
 	 * 
 	 * @param date
-	 * @return
+	 *
 	 */
 	public final int thursdayOfYear(final double date) {
 		return this.thursdayOfYear(JsDate.create(date));
@@ -1511,7 +1511,7 @@ public class Time extends JavaScriptObject {
 	 * Alias for {@link #fridayOfYear(JsDate)} for a Java date.
 	 * 
 	 * @param date
-	 * @return
+	 *
 	 */
 	public final int fridayOfYear(final Date date) {
 		return this.fridayOfYear(JsDate.create(date.getTime()));
@@ -1521,7 +1521,7 @@ public class Time extends JavaScriptObject {
 	 * Alias for {@link #fridayOfYear(JsDate)} for a double.
 	 * 
 	 * @param date
-	 * @return
+	 *
 	 */
 	public final int fridayOfYear(final double date) {
 		return this.fridayOfYear(JsDate.create(date));
@@ -1546,7 +1546,7 @@ public class Time extends JavaScriptObject {
 	 * Alias for {@link #saturdayOfYear(JsDate)} for a Java date.
 	 * 
 	 * @param date
-	 * @return
+	 *
 	 */
 	public final int saturdayOfYear(final Date date) {
 		return this.saturdayOfYear(JsDate.create(date.getTime()));
@@ -1556,7 +1556,7 @@ public class Time extends JavaScriptObject {
 	 * Alias for {@link #saturdayOfYear(JsDate)} for a double.
 	 * 
 	 * @param date
-	 * @return
+	 *
 	 */
 	public final int saturdayOfYear(final double date) {
 		return this.saturdayOfYear(JsDate.create(date));
