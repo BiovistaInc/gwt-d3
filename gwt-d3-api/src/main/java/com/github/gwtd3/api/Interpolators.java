@@ -242,7 +242,7 @@ public class Interpolators {
 				interpolateNumber0(a, b)) {
 			@Override
 			public Double cast(final Value v) {
-				return new Double(v.asDouble());
+				return Double.valueOf(v.asDouble());
 			}
 		};
 	}
@@ -447,7 +447,7 @@ public class Interpolators {
 				interpolateRound0(a, b)) {
 			@Override
 			public Long cast(final Value v) {
-				return new Long((long) v.asDouble());
+				return Long.valueOf((long) v.asDouble());
 			}
 		};
 	}
@@ -467,7 +467,7 @@ public class Interpolators {
 				interpolateRound0(a, b)) {
 			@Override
 			public Byte cast(final Value v) {
-				return new Byte(v.asByte());
+				return Byte.valueOf(v.asByte());
 			}
 		};
 	}
@@ -487,7 +487,7 @@ public class Interpolators {
 				interpolateRound0(a, b)) {
 			@Override
 			public Character cast(final Value v) {
-				return new Character(v.asChar());
+				return Character.valueOf(v.asChar());
 			}
 		};
 	}
@@ -507,7 +507,7 @@ public class Interpolators {
 				interpolateRound0(a, b)) {
 			@Override
 			public Integer cast(final Value v) {
-				return new Integer(v.asInt());
+				return Integer.valueOf(v.asInt());
 			}
 		};
 	}
@@ -531,7 +531,7 @@ public class Interpolators {
 				// see
 				// https://developers.google.com/web-toolkit/doc/latest/DevGuideCodingBasicsJSNI#important
 				// v.asLong()
-				return new Long((long) v.asDouble());
+				return Long.valueOf((long) v.asDouble());
 			}
 		};
 	}
@@ -551,7 +551,7 @@ public class Interpolators {
 				interpolateRound0(a, b)) {
 			@Override
 			public Short cast(final Value v) {
-				return new Short(v.asShort());
+				return Short.valueOf(v.asShort());
 			}
 		};
 	}
